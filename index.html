@@ -1,12 +1,10 @@
 <!DOCTYPE HTML>
 <!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
 -->
 <html>
 	<head>
-		<title>Solid State by HTML5 UP</title>
+		<title>Decorative Lighting Columns</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -17,13 +15,27 @@
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Solid State</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+<!-- Header -->
+<header id="header" class="alt">
+
+	<div class="left-side">
+        <a href="index.html"><img src="images/logo_lowres.jpg" alt="Decorative Lighting Columns Logo"></a>
+		<h1><a href="index.html">Decorative Lighting Columns</a>
+		</h1> 
+    </div>
+
+    <nav>
+        <div class="contact-icons">
+            <a href="mailto:info@ledlightpoles.co.uk" class="email">
+                <i class="fas fa-envelope"></i> <!-- Font Awesome email icon -->
+            </a>
+            <a href="tel:+4407452904174" class="phone">
+                <i class="fas fa-phone-alt"></i> <!-- Font Awesome phone icon -->
+            </a>
+			<!--<a href="#menu">Menu</a>-->
+        </div>
+    </nav>
+</header>
 
 				<!-- Menu -->
 					<nav id="menu">
@@ -31,35 +43,102 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>
+								<li><a href="products.html">Products</a></li>
+								<li><a href="products.html">Technology</a></li>
+								<li><a href="generic.html">Calculatios</a></li>
+								<li><a href="about.html">About us</a></li>
+								<!--<li><a href="#">Log In</a></li>
+								<li><a href="#">Sign Up</a></li>-->
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
 					</nav>
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<div class="logo"><span class="icon fa-gem"></span></div>
-							<h2>This is Solid State</h2>
-							<p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
-						</div>
-					</section>
+<!-- Banner -->
+<section id="banner">
+    <div class="inner">
+        <!-- Slideshow Section -->
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/Y.jpg" alt="Slide 1">
+            </div>
+            <div class="slide fade">
+                <img src="images/L.jpg" alt="Slide 2">
+            </div>
+            <div class="slide fade">
+                <img src="images/z.jpg" alt="Slide 3">
+            </div>
+			<div class="slide fade">
+                <img src="images/L+.jpg" alt="Slide 4">
+            </div>
+			<div class="slide fade">
+                <img src="images/L_small.jpg" alt="Slide 5">
+            </div>
+			<div class="slide fade">
+                <img src="images/z_small.jpg" alt="Slide 6">
+            </div>
+			<br>
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+        </div>
 
+
+        <!-- Existing Content -->
+        <div class="content">
+            <div class="logo"><span class="fa-jem"></span></div>
+            <h2>Decorative Lighting Columns</h2>
+            <p>Bespoke design and uncompromising quality</p>
+			<a href="products.html" class="special">Browse our collection</a>        
+		</div>
+    </div>
+</section>
+
+<script>
+	let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+
+function showSlides() {
+    // Hide all slides and remove active class from dots
+    slides.forEach((slide, index) => {
+        slide.style.display = index === slideIndex ? 'block' : 'none';
+    });
+
+    dots.forEach((dot, index) => {
+        dot.classList.remove('active');
+        if (index === slideIndex) {
+            dot.classList.add('active');
+        }
+    });
+
+    // Move to the next slide
+    slideIndex = (slideIndex + 1) % slides.length;
+}
+
+// Initialize slideshow
+showSlides();
+setInterval(showSlides, 4000); // Change slide every 4 seconds
+
+</script>
 				<!-- Wrapper -->
 					<section id="wrapper">
 
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+									<img src="images/night.jpg" alt=""/>
 									<div class="content">
-										<h2 class="major">Magna arcu feugiat</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<h2 class="major">About us</h2>
+										<p>Based in Glasgow, our company offers highly customisable and cost effective outdoor lighting solutions. We wanted to move away from the dullness of traditional grey galvanized columns so common in the UK and offer something more unique and aesthetically pleasing. Whether you are looking to enhance your outdoor commercial space or create an unforgettable atmosphere in your garden, we have you covered.</p>
+										<p>Explore our collection and discover how our products can light up your world.</p>
+										<a href="products.html" class="special">Browse our collection</a>
 									</div>
 								</div>
 							</section>
@@ -67,11 +146,17 @@
 						<!-- Two -->
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+									<img src="images/playground.jpg" alt="" />
 									<div class="content">
-										<h2 class="major">Tempus adipiscing</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<h2 class="major">Why choose US</h2>
+										<ul>
+											<li>All our bespoke lighting columns comply with BSEN40 requirements</li>
+											<li>Our columns are made of steel or aluminium with the height of up to 6m</li>
+											<li>All columns are powder coated to achieve a wide range of beautiful aesthetic color schemes</li>
+											<li>Root mounting or flange plate options available</li>
+											<li>Our products are built to last in various weather conditions and include a 5 year warranty.</li>
+											<li>We offer site surveying and lighting calculations using industry leading DIALux software to ensure optimal lighting design and efficiency.</li>
+										</ul>
 									</div>
 								</div>
 							</section>
@@ -79,95 +164,54 @@
 						<!-- Three -->
 							<section id="three" class="wrapper spotlight style3">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									<img src="images/ss.jpg" alt="" />
 									<div class="content">
-										<h2 class="major">Nullam dignissim</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<h2 class="major">Picture our lighting columns in your...</h2>
+										<p>...shopping centres, retail parks, public spaces, parks, parking, cycle and foot paths, bus shelters ...</p>
 									</div>
 								</div>
 							</section>
-
-						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Vitae phasellus</h2>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">Ante fermentum</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Fusce consequat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-									</section>
-									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
-									</ul>
-								</div>
-							</section>
-
-					</section>
 
 				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
+				<section id="footer">
+					<div class="inner">
+						<h2 class="major">Ready to quote?</h2>
+						<p>We would love to discuss your upcoming projects and requirements.<br />
+						Contact us via email, phone or the form below.</p>
+						<form id="contactForm">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" required/>
 								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" required/>
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="6" required></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" /></li>
 							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
+							<script src="send-email.js"></script>
+						</form>
+						<ul class="contact">
+							<li class="icon solid fa-phone">07452 904174</li>
+							<li class="icon solid fa-envelope"><a href="#">info@ledlightpoles.co.uk</a></li>
+							<li class="ic
+						<ul class="copyright">
+						</ul>
+						<hr>
+						<p>&copy; Decorative Lighting Columns. All rights reserved.MK Design</p>
+					</div>
+					<div id="responseMessage"></div>
+
+
+				</section>
+			</div>
 
 			</div>
 
