@@ -3159,6 +3159,11 @@ input, select, textarea {
         padding: 0 1em;
     }
 
+	#header .left-side a img {
+		height: 1.5em;
+		width: auto;
+	}
+
     #header nav {
         font-size: 0.75em;
     }
@@ -3727,7 +3732,7 @@ input, select, textarea {
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-				text-align: right;
+				text-align: left;
 			}
 
 			.wrapper.spotlight:nth-child(2n - 1) .image {
@@ -3836,6 +3841,11 @@ input, select, textarea {
 				.wrapper .inner {
 					padding: 3em 3em 1em 3em ;
 					width: 100%;
+				}
+
+
+				.wrapper.spotlight .inner {
+					display: block;
 				}
 
 				.wrapper.spotlight .image {
