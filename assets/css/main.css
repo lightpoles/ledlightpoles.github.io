@@ -3081,7 +3081,7 @@ input, select, textarea {
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 #header h1 {
@@ -3100,7 +3100,6 @@ input, select, textarea {
     /* Maintain aspect ratio */
     /*flex: 1 1 auto; */
     /* Allow images to grow and shrink */
-	align-items: flex-end;
     object-fit: contain;
 }
 
@@ -3442,6 +3441,11 @@ input, select, textarea {
     .content {
         margin-top: 2em;
     }
+
+	.dot {
+		height: 10px;
+		width: 10px;
+	}
 }
 
 /* Wrapper */
@@ -3477,10 +3481,8 @@ input, select, textarea {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto,
- cover;
-			background-position: center,
- 0% 30%;
+			background-size: auto, cover;
+			background-position: center, 0% 30%;
 			margin-bottom: -6.5em;
 		}
 
@@ -3579,15 +3581,16 @@ input, select, textarea {
 		.wrapper .inner {
 			padding: 3em 0 1em 0 ;
 			margin: 0 auto;
-			width: 55em;
+			width: 65%;
 		}
 
-		.wrapper .inner img {
-			width: 40%; /* Make image fit the container’s width */
-			height: 40%; /* Make image fit the container’s height */
+		.wrapper.spotlight .inner img {
+			width: 25em; /* Make image fit the container’s width */
+			height: auto; /* Make image fit the container’s height */
 			object-fit: contain; /* Ensure the whole image is visible */
-			display: block; /* Avoid inline gaps from images */
 			margin: auto;
+			padding: 5%;
+			border-radius: 15px;
 		}
 
 		.wrapper .inner .features img {
@@ -3709,7 +3712,7 @@ input, select, textarea {
 				flex-direction: row;
 			}
 
-			.wrapper.spotlight .image {
+			/*.wrapper.spotlight .image {
 				border-radius: 100%;
 				margin: 0 3em 2em 0;
 				width: 22em;
@@ -3720,7 +3723,7 @@ input, select, textarea {
 				.wrapper.spotlight .image img {
 					border-radius: 100%;
 					width: 100%;
-				}
+				}*/
 
 			.wrapper.spotlight .content {
 				width: 100%;
@@ -3732,7 +3735,6 @@ input, select, textarea {
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-				text-align: left;
 			}
 
 			.wrapper.spotlight:nth-child(2n - 1) .image {
@@ -3848,9 +3850,9 @@ input, select, textarea {
 					display: block;
 				}
 
-				.wrapper.spotlight .image {
-					margin: 0 2em 2em 0;
-					width: 32em;
+				.wrapper.spotlight .inner img {
+					display: block;
+					margin 0 auto;
 				}
 
 				.wrapper.spotlight:nth-child(2n - 1) .image {
@@ -3904,12 +3906,21 @@ input, select, textarea {
 
 			.wrapper.spotlight .inner {
 				display: block;
+				margin 0 auto;
 			}
 
 			.wrapper.spotlight .image {
 				margin: 0 0 1em 0 !important;
 				max-width: 85%;
 				width: 12em;
+				
+			}
+
+			.wrapper.spotlight .inner img {
+				width: 15em; /* Make image fit the container’s width */
+				height: auto; /* Make image fit the container’s height */
+				display: block;
+				margin 0 auto;
 			}
 
 		}
